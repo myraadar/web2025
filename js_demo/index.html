@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myra | JS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+      
+</head>
+<body>
+    <h1>today i will talk about stuff。`▽`</h1>
+    <h2>volleyballs cool!!</h2>
+    <p>heres a <a href="https://sportraffic.com/wp-content/uploads/2019/05/Mikasa-V200W-Indoor-Ball.jpg" target="_blank" onclick="alert('warning!\n you\'re leaving my website!!!\n are you sure? `>_<')">volleyball</a>, pretty cool, right?</p>
+
+    <h2>heres a math question so you can SUFFER!!</h2>
+    <p>what is... 2+2?</p>
+    <button onclick="document.getElementById('add').innerHTML=2+2">click here to see!</button>
+    <p id="add"></p>
+im super bored 
+    <h2>now that thats over...lets change text :P</h2>
+    <button onclick="document.getElementById('change-text').innerHTML='hooray! you did it!'">click this button!</button>
+    <p id="change-text">this text will change when you click that button!</p>
+
+    <h2>whats the date and time again...?</h2>
+    <button onclick="document.getElementById('date').innerHTML=Date()">click here to see!</button>
+    <p id="date"></p>
+
+    <p>now how do i add a function....????</p>
+    <button onclick="pfun()">click me to run the function!</button>
+    <p id="p-fun"></p>
+
+    <h2>how to return user data???</h2>
+    <button onclick="askName()">click here to say your nameeee</button>
+    <p id="ask-name"></p>
+
+    <h2>now... how to ask questions with js in the external document??</h2>
+    <button onclick="askQuestion()">click here for a very difficult question...</button>
+    <p id="question"></p>
+
+    <script>
+        //alert("ellooo!\nwelcome!\nhow are you? (^^ゞ");
+
+        function pfun() {
+            var p = document.getElementById('p-fun');
+            p.innerHTML='hoooorayy you did it!!!'
+           p.style.color = 'pink';
+           p.style.fontSize = '30px';
+        }
+
+        function askName() {
+            var nameReturn = document.getElementById('ask-name');
+            var name = prompt('please write your name here!!')
+            if (name == '') {
+                alert ('please try again (￣﹃￣)')
+            } else {
+                nameReturn.innerHTML = 'hello ' + name + ' nice to meet youuu!'
+            }
+        }
+    </script>
+</body>
+</html>
